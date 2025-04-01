@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./font/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: Poppins;
+  background-color: rgb(224, 221, 221);
+  text-align: center;
+}
+
+.Container {
+  max-width: 1600px;
+  height: 250px;
+  background-color: #a1a1a1;
+  margin: 0px auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  width: 140px;
+  height: 50px;
+  margin: 0px auto;
+}
+.Button {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px auto;
+  background: white;
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 8px;
+  transition: all 300ms ease;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Icon {
+  width: 20px;
+  height: auto;
+  transition: all 300ms ease;
+}
+
+.Button:hover {
+  background: rgb(207, 216, 220);
+  box-shadow: 0px 0px 20px white;
+  scale: 1.1;
+}
+
+.Button:hover .Icon {
+  transform: rotate(180deg);
+}
+
+.List {
+  visibility: hidden;
+  color: white;
+  margin: 0px auto;
+  justify-items: center;
+  background-color: rgba(97, 97, 97, 0.8);
+  padding: 15px 10px;
+  border-radius: 9px;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+
+.List a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 8px;
+}
+.dropdown:hover .List {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(10px);
+}
